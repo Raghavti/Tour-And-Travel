@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>🚌 Find Bus Services</h1>
+
+    <div class="search-box">
+        <label>From:</label>
+        <select id="from">
+            <option value="Delhi">Delhi</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">Goa</option>
+        </select>
+
+        <label>To:</label>
+        <select id="to">
+            <option value="Jaipur">Jaipur</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
+
+        <label>Date:</label>
+        <input type="date" id="date">
+
+        <button onclick="searchBus()">Search Bus</button>
+    </div>
+
+    <div id="busResults" class="results"></div>
+
+    <script src="js/trans.js"></script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/style3.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- <a href="#" class="logo">Heritage & Culture</a> -->
+         <a href="#" class="logo">Tour & Travel</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <!-- <a href="#about">About</a> -->
+            <a href="/services.html">Services</a>
+            <a href="/places.html">Places</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/map.html">Office</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2>🚌 Bus Ticket Finder</h2>
+        <p style="color:#444; margin-bottom:20px;">Search buses between any two cities instantly.</p>
+
+        <input type="text" id="from" placeholder="Enter departure city (From)">
+        <input type="text" id="to" placeholder="Enter destination city (To)">
+        <input type="date" id="date">
+
+        <button onclick="searchBus()">Search Bus</button>
+
+        <div id="bus-results"></div>
+    </div>
+
+    <script src="/js/trans.js"></script>
+</body>
+</html>

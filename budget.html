@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Itinerary Generator</title>
+
+    <!-- Correct CSS path (public/css/style.css) -->
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">Tour & Travel</a>
+
+    <nav class="navbar">
+        <!-- These work because Express serves /public as root -->
+        <a href="/index.html" class="active">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/places.html">Places</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/map.html">Office</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>AI Travel Itinerary Generator</h2>
+
+    <input id="destination" placeholder="Enter destination (e.g., Goa)">
+    <input id="days" type="number" placeholder="How many days?">
+    <input id="budget" placeholder="What's Your Budget">
+    <input id="Interest" placeholder="Interests (Adventure, beaches, temples…)">
+    <input id="city" placeholder="Cities where you want to go">
+    
+    <button id="generate-btn">Generate Itinerary</button>
+
+    <h3>Result:</h3>
+    <div id="output">Your itinerary will appear here...</div>
+</div>
+
+<!-- Most important fix: add type="module" -->
+<script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
